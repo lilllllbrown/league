@@ -1,0 +1,379 @@
+/*//---------------------------------------------------------------------//
+//                   CSS Designed by David Drexler                     //
+//                                2015                                 //
+//---------------------------------------------------------------------//*/
+
+
+/*//---------------------------------------------------------------------//
+//                              Universal                              //
+//---------------------------------------------------------------------//*/
+
+* {
+    font-family: josefinSansRegular;
+    color: black;
+
+}
+
+/*//---------------------------------------------------------------------//
+//                                 Body                                //
+//---------------------------------------------------------------------//*/
+
+body {
+    background-color: black;
+    background-image: url("images/gun_metal.png");
+    padding-top: 2%;
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-bottom:-1em;
+}
+
+/*//---------------------------------------------------------------------//
+//                                Images                               //
+//---------------------------------------------------------------------//*/
+
+img {
+    display: block;
+    margin: auto;
+
+}
+#img_cont {
+    display: table;
+    width: 90%;
+    margin: 20px auto;
+}
+
+#img_cont a {
+    display: table-cell;
+    text-align: center;
+    width: 16%;
+    text-decoration: none;
+    color:white;
+}
+
+#img_cont img {
+    width: auto;
+    height:200px;
+    max-width: 150px;
+
+
+}
+
+
+
+/*//---------------------------------------------------------------------//
+//                        Paragraph and Headings                       //
+//---------------------------------------------------------------------//*/
+
+p {
+    text-indent: 3em;
+    font-size: 14pt;
+    line-height: 2.0;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+}
+
+h1 {
+    margin: auto;
+}
+
+h2 {
+    margin: auto;
+    padding-top: 2em;
+    font-size:30px;
+    text-align: center;
+    color: #EAB954;
+    letter-spacing:.25em;
+}
+
+h3 {
+    margin: auto;
+    color:#EAB954;
+    text-align:center;
+    padding:1em;
+    font-size:1.85em;
+    letter-spacing:.25em;
+}
+
+h4 {
+    margin:auto;
+}
+
+h5 {
+    margin:auto;
+    color:white;
+    font-size: 18px;
+    padding-bottom: 2em;
+    text-align: center;
+}
+/*//---------------------------------------------------------------------//
+//                           Links and Lists                           //
+//---------------------------------------------------------------------//*/
+
+ol {
+    display:block;
+    list-style-type: decimal;
+    padding-left: 0;
+}
+
+ol ol ol li {
+    list-style: none;
+}
+
+ol ol li {
+    font-weight: normal;
+    list-style: none;
+    padding-top: 0em;
+}
+
+ol li {
+    font-weight: bold;
+    list-style: none;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+ul ul ul li { 
+    list-style: none;
+}
+
+ul ul li { 
+    list-style: none;
+}
+
+ul li { 
+    list-style: none;
+}
+
+/*//---------------------------------------------------------------------//
+//                               Elements                              //
+//---------------------------------------------------------------------//*/
+
+legend {
+    color: #BC9529 !important;
+    font-family: josefinSansSemiBold;
+    font-size: 20px;
+}
+
+label {
+    color: #BC9529;
+    font-family: josefinSansSemiBold;
+}
+
+select {
+    color: #084065 !important;
+}
+
+/*//---------------------------------------------------------------------//
+//                            Font Creation                            //
+//---------------------------------------------------------------------//*/
+
+@font-face {
+    font-family: josefinSansSemiBold;
+    src: url(fonts/josefin_sans/JosefinSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: josefinSansRegular;
+    src: url(fonts/josefin_sans/JosefinSans-Regular.ttf);
+}
+
+/*//---------------------------------------------------------------------//
+//                             General IDs                             //
+//---------------------------------------------------------------------//*/
+
+.header {
+    width:100%;
+    position:fixed;
+    top:0px;
+}
+
+.header-cont {
+    width:100%;
+    position:fixed;
+    top:0px;
+}
+#nav {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    background-color: #1E322E;
+    border-top: 2px solid #EAB954;
+    border-bottom: 2px solid #EAB954;
+    opacity: .7;
+}
+/*
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    padding: 0;
+    background-color: #1E322E;
+    border-top: 2px solid #EAB954;
+    border-bottom: 2px solid #EAB954;
+    opacity: .7;
+}
+*/
+#footer {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    background-color: #1E322E;
+    border-top: 2px solid #EAB954;
+    margin-top: 7%;
+    opacity: .7;
+}
+
+#formChampionSelect {
+    text-align: center;
+}
+
+#champSelectOne {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    margin: 5%;
+    margin-top: 1%;
+}
+
+#champSelectTwo {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    margin: 5%;
+    margin-top: 1%;
+}
+
+/*//---------------------------------------------------------------------//
+//                           General Classes                           //
+//---------------------------------------------------------------------//*/
+
+.navItem {
+    display: inline-block;
+    padding: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.navItemText {
+    color: #EAB954;
+    text-decoration: none;
+    font-family: josefinSansRegular;
+    font-size: 18px;
+    padding-left: 2px;
+    padding-right: 2px;
+    transition: color 0.5s ease;
+}
+
+.footerText {
+    padding: 1%;
+    color: #EAB954;
+    font-size: 18px;
+}
+
+.dropListSec {
+    margin: 1%;
+    padding: 1%;
+}
+
+/*//---------------------------------------------------------------------//
+//                           Pseudo Classes                           //
+//---------------------------------------------------------------------//*/
+
+.navItemText:hover {
+
+
+    border-bottom: 3px solid #EAB954;
+    border-top: 3px solid #EAB954;
+
+}
+
+/*//---------------------------------------------------------------------//
+//                          Form                                       //
+//---------------------------------------------------------------------//*/
+
+#form article #main{
+    float: none;
+    margin: auto; /* because of the fixed width this centers the form */
+    text-align: center;
+    width: 600px; /* not repsonive but fixed */
+    padding-left: 10em;
+    padding-right:10em;
+}
+
+/* need to clear any floats that may exist */
+fieldset{
+    border: 2px solid white;
+    border-bottom-color:black;
+    clear: both; 
+    padding:2em;
+}
+
+fieldset.textarea{
+    border-bottom:2px solid white;
+}
+/* just pushes content to left side of the box. */
+fieldset.contact{
+    float: center;
+    border-bottom: 2px solid white;
+}
+/* when you look at the labels this pushes then next to the input and right
+aligns them. Display block means they are each on their own line. */
+fieldset.contact label{
+    display: block;
+    text-align: left /* pushes the text to the right where they line up */
+        /* the float left above pushes everything back to the left*/
+}
+
+fieldset.contact input{
+    width: 43em; /* works with above to be the same size for the boxes */
+}
+
+fieldset.buttons{
+    border: none;
+    text-align:center;
+}
+
+fieldset.wrapper {
+    border: 0;
+    margin: auto;
+    width: 400px;
+}
+
+fieldset.wrapper legend {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align:center;
+}
+
+fieldset.wrapper > legend {
+    /* i only want the first legend ie if it follows the class wrapper */
+    font-size: 2em;
+}
+
+label {
+    color: white;
+    display: block;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+/* style the errors in the form so they are visible */
+.mistake {
+    color: #fff;
+    background-color:#800;
+    border: thin solid #000;
+}
+
+/* style the list of errors that will show before the form */
+#errors ol li{
+    color: #ff5555;
+}
