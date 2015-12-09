@@ -4,18 +4,18 @@ include ("header.php");
 include ("nav.php");
 
 
-if($_POST["submit"]) {
-    $recipient="lbrown20@uvm.edu";
-    $subject="Form to email message";
-    $sender=$_POST["txtFirstName"];
-    $senderEmail=$_POST["txtEmail"];
-    $message=$_POST["lstExperience"];
-/*
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+if ($_POST["submit"]) {
+    $recipient = "lbrown20@uvm.edu";
+    $subject = "Form to email message";
+    $sender = $_POST["txtFirstName"];
+    $senderEmail = $_POST["txtEmail"];
+    $message = $_POST["lstExperience"];
+    /*
+      $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-*/
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
+      mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+     */
+    $thankYou = "<p>Thank you! Your message has been sent.</p>";
 }
 ?>
 
@@ -113,6 +113,40 @@ if($_POST["submit"]) {
                               value="No"
 
                               tabindex="340">No</label>
+            </fieldset>
+            <fieldset class="radio">
+                <legend>HOW HELPFUL WAS OUR SITE?</legend>
+                <label for="radHelpful">(1-LEAST HELPFUL, 5-MOST HELPFUL)</label>
+                <label><input type="radio" 
+                              id="radHelpful1" 
+                              name="radHelpful" 
+                              value="1"
+
+                              tabindex="330">1</label>
+                <label><input type="radio" 
+                              id="radHelpful2" 
+                              name="radHelpful" 
+                              value="2"
+
+                              tabindex="330">2</label>
+                <label><input type="radio" 
+                              id="radHelpful3" 
+                              name="radHelpful" 
+                              value="3"
+
+                              tabindex="330">3</label>
+                <label><input type="radio" 
+                              id="radHelpful4" 
+                              name="radHelpful" 
+                              value="4"
+
+                              tabindex="330">4</label>
+                <label><input type="radio" 
+                              id="radHelpful5" 
+                              name="radHelpful" 
+                              value="5"
+                              checked                       
+                              tabindex="330">5</label>
             </fieldset>
 
             <fieldset class="checkbox">
